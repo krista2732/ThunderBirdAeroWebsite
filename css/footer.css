@@ -1,0 +1,76 @@
+footer {
+    margin: auto auto;
+    padding: 60px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    max-width: var(--page-width);
+}
+
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        /* stack all columns */
+        gap: 32px;
+        padding: 40px 20px;
+    }
+}
+
+
+footer p,
+footer h1,
+footer h2,
+footer h3 {
+    color: #a0a0a0;
+}
+
+footer li {
+    padding: 8px;
+    list-style: none;
+}
+
+footer .sticky-nav-link {
+    list-style: none;
+    padding: 8px;
+    color: #a0a0a0;
+}
+
+.footer-column p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.footer-column .input-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.footer-column .footer-logo-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-column .footer-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 20px;
+    }
+
+    .footer-column .footer-logo-row {
+        flex-direction: column;
+        align-items: flex-start;
+        /* or 'center' if you want it centered instead */
+        gap: 8px;
+    }
+}

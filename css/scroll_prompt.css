@@ -1,0 +1,67 @@
+.scroll-prompt {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.45);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    cursor: pointer;
+    user-select: none;
+
+    backdrop-filter: blur(6px);
+
+    animation: scroll-prompt-float 2s ease-in-out infinite;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        background-color 0.2s ease;
+}
+
+.scroll-prompt:hover {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.scroll-prompt svg {
+    width: 18px;
+    height: 18px;
+}
+
+.scroll-prompt.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(10px);
+}
+
+@keyframes scroll-prompt-float {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(5px);
+    }
+}
+
+@media (max-width: 600px) {
+    .scroll-prompt {
+        bottom: 20px;
+        font-size: 0.85rem;
+    }
+}

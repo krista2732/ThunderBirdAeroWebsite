@@ -1,0 +1,339 @@
+/* ================================
+   STICKY NAV — CSS
+   Every "customize" comment marks a value you can freely change.
+   ================================ */
+
+.sticky-nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.sticky-nav.scrolled {
+    background-color: var(--primary-background);
+}
+
+.sticky-nav-inner {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.sticky-nav-logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sticky-nav-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 8px 4px;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+
+
+.sticky-nav-link:hover {
+    color: #fff;
+    /* customize: hover color */
+}
+
+/* underline-on-hover effect — delete this whole block if you don't want it */
+.sticky-nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    /* customize: underline color */
+    transition: width 0.2s ease;
+}
+
+.sticky-nav-link:hover::after {
+    width: 100%;
+}
+
+/* active section highlight — JS toggles this class on the link matching current section */
+.sticky-nav-link.active {
+    color: #fff;
+    /* customize: active link color */
+}
+
+.sticky-nav-link.active::after {
+    width: 100%;
+}
+
+.sticky-nav-link[href$="#contact"] {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--primary-border-radius);
+    padding: 7px 14px;
+    margin-left: 4px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.sticky-nav-link[href$="#contact"]:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    color: #fff;
+}
+
+.sticky-nav-link[href$="#contact"]::after {
+    display: none;
+}
+
+/* ================================
+   Mobile hamburger toggle
+   ================================ */
+
+.sticky-nav-toggle {
+    display: none;
+    /* shown only on mobile via media query below */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.sticky-nav-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    /* customize: hamburger icon color */
+    border-radius: 2px;
+}
+
+/* ================================
+   Desktop dropdown
+   ================================ */
+
+.sticky-nav-dropdown {
+    position: relative;
+}
+
+.sticky-nav-dropdown-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-arrow {
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 0.75em;
+    transition: transform 0.2s ease;
+}
+
+.sticky-nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    min-width: 140px;
+    width: max-content;
+
+    padding: 6px 0;
+    margin: 0;
+
+    list-style: none;
+
+    background-color: var(--primary-background);
+    border-radius: var(--primary-border-radius);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease,
+        max-height 0.2s ease;
+}
+
+.sticky-nav-dropdown-menu .sticky-nav-link {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+/* Don't show the normal underline inside dropdown */
+.sticky-nav-dropdown-menu .sticky-nav-link::after {
+    display: none;
+}
+
+/* Open dropdown on hover */
+@media (min-width: 821px) {
+
+    .sticky-nav-dropdown:hover .sticky-nav-dropdown-menu,
+    .sticky-nav-dropdown:focus-within .sticky-nav-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.sticky-nav-dropdown.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 820px) {
+
+    .sticky-nav-links {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 50%;
+        z-index: 50;
+
+        flex-direction: column;
+        gap: 4px;
+        padding: 16px;
+
+        box-sizing: border-box;
+
+        background-color: var(--primary-background);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(-100%);
+
+        transition:
+            opacity 0.2s ease,
+            transform 0.2s ease,
+            visibility 0.2s ease,
+            max-height 0.2s ease;
+    }
+
+    .sticky-nav-links.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0%);
+    }
+
+    .sticky-nav.open {
+        background: var(--primary-background);
+    }
+
+    .sticky-nav-link {
+        display: block;
+        text-align: left;
+        font-size: 1.5em;
+        box-sizing: border-box;
+        padding: 8px 16px;
+        border-radius: 6px;
+    }
+
+    .sticky-nav-toggle {
+        display: flex;
+    }
+
+    .sticky-nav-link::after {
+        display: none;
+    }
+
+    .sticky-nav-toggle span {
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .sticky-nav.open .sticky-nav-toggle span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .sticky-nav.open .sticky-nav-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .sticky-nav.open .sticky-nav-toggle span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .sticky-nav-dropdown-menu {
+        position: fixed;
+        width: 100%;
+        border-radius: 0;
+        padding-bottom: 16px;
+        top: calc(100% - 32px);
+        background: var(--primary-background);
+        box-shadow: none;
+        max-height: 0px;
+        /* transition: translate 5s; */
+    }
+
+    .sticky-nav-dropdown.open .sticky-nav-link {
+        visibility: visible;
+        opacity: 1;
+        max-height: 300px;
+    }
+
+    .sticky-nav-dropdown-menu .sticky-nav-link {
+        left: 60px;
+        opacity: 0;
+        visibility: hidden;
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+
+    .sticky-nav-dropdown.open .sticky-nav-dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        max-height: 300px;
+        transform: translateY(16px);
+    }
+}
+
+.nav-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+section[id],
+div[id],
+[id].section-target {
+    scroll-margin-top: calc(1.5 * var(--nav-height));
+}

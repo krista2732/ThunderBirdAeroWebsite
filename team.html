@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Team</title>
+
+    <script src="js/team.js" defer></script>
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/back_to_top.css" />
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/footer.css" />
+</head>
+
+<nav class="sticky-nav" id="stickyNav">
+    <div class="sticky-nav-inner">
+        <a href="index.html" class="sticky-nav-logo">
+            <img src="./images/logo.png" alt="UBC Thunderbird Aero Design Team Logo" class="nav-logo">
+        </a>
+
+        <ul class="sticky-nav-links">
+            <li><a href="index.html" class="sticky-nav-link">Home</a></li>
+            <li><a href="team.html" class="sticky-nav-link">The Team</a></li>
+            <li><a href="liquid.html" class="sticky-nav-link">Liquid</a></li>
+            <li><a href="solid.html" class="sticky-nav-link">Solid</a></li>
+            <li><a href="index.html#contact" class="sticky-nav-link">Contact</a></li>
+
+        </ul>
+
+        <!-- optional: hamburger for mobile, toggled by the JS -->
+        <button class="sticky-nav-toggle" id="stickyNavToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Back to top button -->
+<button id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+</button>
+
+<body>
+
+    <main class="team-page">
+
+        <header class="team-header">
+            <h1>Our Team</h1>
+
+            <p>
+                Meet the people behind our team. From engineering and
+                design to operations and outreach, our members work
+                together to make our projects possible.
+            </p>
+        </header>
+
+        <div id="team-container"></div>
+
+    </main>
+    <footer>
+        <div class="footer-column">
+            <div class="footer-logo-row">
+                <img src="./images/logo.png" alt="UBC Thunderbird Aero Design Team Logo" class="footer-logo">
+                <h2>UBC Thunderbird Aero Design Team</h2>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula, sapien in pharetra mattis,
+                risus
+                nibh
+                semper justo, ut dictum elit risus et lectus. Morbi quam libero, maximus ac porttitor et, congue vitae
+                quam.
+                Nam
+                nibh risus, condimentum rutrum erat eu, efficitur
+            </p>
+            <br>
+            <br>
+            <p>
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                EMAIL HERE
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h2>Site Map</h2>
+
+            <li><a href="#home" class="sticky-nav-link">Home</a></li>
+            <li><a href="about.html" class="sticky-nav-link">About</a></li>
+            <li><a href="liquid.html" class="sticky-nav-link">Liquid</a></li>
+            <li><a href="solid.html" class="sticky-nav-link">Solid</a></li>
+            <li><a href="#contact" class="sticky-nav-link">Contact</a></li>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+:root {
+    --primary-background: #141613;
+    --primary-border-colour: white;
+    --highlight-colour: #841F0B;
+    --primary-element-colour: #454C43;
+    --primary-element-hover-colour: #4F564D;
+    --primary-border-radius: 12px;
+
+    --secondary-background: #272B26;
+    --secondary-element-colour: #141613;
+    --secondary-element-hover-colour: #313630;
+
+    --success-colour: #30c080;
+    --failure-colour: #f87171;
+
+    --page-width: 60%;
+    --nav-height: 100px
+}
