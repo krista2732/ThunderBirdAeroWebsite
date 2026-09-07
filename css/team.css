@@ -119,7 +119,7 @@
 }
 
 .member-title {
-    color: var(--success-colour);
+    color: var(--highlight-colour);
     font-size: 0.95rem;
 
     margin: 0 0 16px;
