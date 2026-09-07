@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UBC Thunderbird Aero Design Team</title>
+
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <!-- Local -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/back_to_top.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/scroll_prompt.css" />
+    <link rel="stylesheet" href="css/rocket.css" />
+    <script src="js/back_to_top.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script src="js/scroll_prompt.js" defer></script>
+
+</head>
+
+<!-- Navigation Bar -->
+<nav class="sticky-nav" id="stickyNav">
+    <div class="sticky-nav-inner">
+        <a href="index.html" class="sticky-nav-logo">
+            <img src="./images/logo.png" alt="UBC Thunderbird Aero Design Team Logo" class="nav-logo">
+        </a>
+
+        <ul class="sticky-nav-links">
+            <li><a href="index.html" class="sticky-nav-link">Home</a></li>
+            <li><a href="team.html" class="sticky-nav-link">The Team</a></li>
+            <li><a href="liquid.html" class="sticky-nav-link">Liquid</a></li>
+            <li><a href="solid.html" class="sticky-nav-link">Solid</a></li>
+            <li><a href="index.html#contact" class="sticky-nav-link">Contact</a></li>
+
+        </ul>
+
+        <!-- optional: hamburger for mobile, toggled by the JS -->
+        <button class="sticky-nav-toggle" id="stickyNavToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Back to top button -->
+<button id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+</button>
+
+<body>
+    <section class="rocket-page">
+
+        <div class="rocket-header">
+            <h1>Skoden</h1>
+            <p>A look at how Skoden is put together, from the full assembly down to the avionics and engine. Each part
+                below includes an exploded-view animation showing how the pieces fit together.</p>
+        </div>
+
+        <!-- FULL ROCKET -->
+        <div class="rocket-section" id="Airframe">
+            <div class="rocket-section-header">
+                <h2>Airframe</h2>
+                <div class="rocket-section-line"></div>
+            </div>
+
+            <div class="rocket-content-grid">
+                <p class="rocket-section-intro">
+                    Skoden is a 5” OD rocket constructed of CNC Machined, Waterjet, and 3D Printed 6061-T6 Aluminum, G12
+                    Fiberglass Bodytubes, and 3D Printed PA612CF and PA12GF airframe and support components.
+                    <br>
+                    <br>
+                    A High Level breakdown of materials, methods, and manufacturing follows:
+
+                    <br>
+                    <br>
+                    Beginning at the Nosecone, it follows a 3:1 Tangent Ogive geometry to prioritize strength over
+                    aerodynamics, and is 3D Printed with PA612CF filament with a Bambu X1E. It has a 6061-T6 tip with an
+                    M10
+                    <br>
+                    <br>
+                    thread which serves 3 purposes; thermal protection, impact resistance, and a robust thread to
+                    integrate
+                    a threaded rod running to a titanium eyenut, mounted against a 6061 plate, used for recovery,
+                    ensuring
+                    that nosecone, and eyenut mounting, are as robust as possible during descent.
+
+                    <br>
+                    <br>
+                    We then have a half metre of G12 fibreglass bodytube, cut in two portions, with control volumes on
+                    either side for main and drogue recovery.
+                </p>
+                <div class="rocket-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/skoden_explode_airframe.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Height</span><span class="v">3.2 m</span></div>
+                    <div class="summary-row"><span class="k">Diameter</span><span class="v">15.2 cm</span></div>
+                    <div class="summary-row"><span class="k">Liftoff mass</span><span class="v">22.4 kg</span></div>
+                    <div class="summary-row"><span class="k">Target apogee</span><span class="v">10,000 ft</span></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- AVIONICS -->
+        <div class="rocket-section" id="avionics">
+            <div class="rocket-section-header">
+                <h2>avionics</h2>
+                <div class="rocket-section-line"></div>
+            </div>
+
+            <div class="rocket-content-grid">
+                <p class="rocket-section-intro">
+                    Recovery systems are controlled using 2 DMR Blue Raven flight computers, each connected to two 12g
+                    EAGLE
+                    CO2 ejection cartridges. The avionics bay uses 2 fully redundant, separate power supplies for the
+                    EggTimer Mini GPS Transmitter and Trackers, as well as a 4K Hawkeye Camera facing downwards for
+                    footage
+                    capture.
+
+                    Tracking and transmission is split into two portions of RF design, using the Egg Timer Mini TX,
+                    paired
+                    with the RX + Redundant Battery systems and LCD-GPS Modules. These may be swapped by a featherweight
+                    altimeter later in the design cycle depending on team budget. Inverted Pursuits Labs pull pin
+                    switches
+                    will be used on each flight computer prior to launch.
+                </p>
+
+                <div class="rocket-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/skoden_explode_avionics.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Flight computers</span><span class="v">2, redundant</span>
+                    </div>
+                    <div class="summary-row"><span class="k">Sensors</span><span class="v">Barometric + IMU</span></div>
+                    <div class="summary-row"><span class="k">Power</span><span class="v">2x 9V, isolated</span></div>
+                    <div class="summary-row"><span class="k">Pyro channels</span><span class="v">4</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ENGINE -->
+        <div class="rocket-section" id="engine">
+            <div class="rocket-section-header">
+                <h2>engine</h2>
+                <div class="rocket-section-line"></div>
+            </div>
+
+            <div class="rocket-content-grid">
+                <p class="rocket-section-intro">
+
+                    Skoden’s liquid engine uses a fuel centred coaxial shear injector with 44 elements. Stainless steel
+                    hypodermic needles are bonded to the injector with DP 420 epoxy, with the ethanol line running
+                    above,
+                    and a radial distribution manifold channels flow of the nitrous to the outer nitrous elements,
+                    maintaining pressure and mass flow across each element.
+                    <br>
+                    Extensive hand calculations from Atomization in Coaxial Jet Injectors, Lucien Vingert and Pierre
+                    Gicquel
+                    were used to validate atomization, and once the limits imposed by assumptions on surface energy and
+                    tension due to the multiphase, nonlinear, and non-deterministic characteristics of ethanol and
+                    nitrous,
+                    simulations began.
+
+                    <br>
+                    Above the injector face is a manifold that holds our two poppet valves. Much guidance has come from
+                    leaders like Julian Rice in the design and machining of these elements. These poppet valves are
+                    pneumatically actuated from their nominally closed state and have a PEEK cap to prevent mechanical
+                    damage and ensure a proper sealing surface, as they are inline. When the system is pressurized with
+                    CO2,
+                    the valves depress, allowing the flow of our oxidizer and fuel.
+
+                    <br>
+                    These valves, along with the Injector face and manifold, are CNC machined overseas. Like our
+                    bulkheads,
+                    these are tapped and bored for M5 bolts radially aligned.
+
+                    <br>
+                    Monte Carlo flow simulations were used across different temperatures and pressures of oxidizer and
+                    fuel
+                    in our tanks to understand the range of flow rates, and engine impulse, that may be seen.
+
+                    <br>
+                    On a high level, engine ignition is guided from a modified Estes C3 motor with an E-match, and
+                    Piranha
+                    line cutters actuate CO2 lines, which is controlled from our engine flight computer.
+
+                    <br>
+                    Finally, we use a Phenolic Ablative for the engine chamber with a Graphite throat, both of which
+                    have
+                    been CNC machined. A “Phenolic Retainer” block is bolted radially at the base of the Fincan, fixing
+                    these components into the control volume and against the Injector faceplate. The designs have been
+                    proven with hand calculations and simulation, and the control volume is maintained with O rings in
+                    the
+                    Phenolic. A neat design choice was integrating a 6061 sleeve around the midsection of the Phenolic
+                    (between its outer wall and the Fincan) that acts like a coffee sleeve — this is a secured air
+                    volume
+                    that lowers the temperatures seen by the Fincan through conduction with the engine chamber.
+
+                    <br>
+                    Values shown in our included .eng file come from HalfCatSim spreadsheets, with all inputs validated
+                    from
+                    simulations and industry guidance. Skoden shows an initial thrust of 3445N and an impulse of 17078
+                    Ns,
+                    aligned with an N3115 classification.
+
+                    <br>
+                    All engine components have been designed, machined, and are in-hand awaiting cold flow testing
+                    components.
+                </p>
+                <div class="rocket-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/skoden_explode_engine.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Motor</span><span class="v">L1720, 75 mm</span></div>
+                    <div class="summary-row"><span class="k">Retention</span><span class="v">Machined aluminum
+                            cup</span></div>
+                    <div class="summary-row"><span class="k">Centering rings</span><span class="v">3, birch
+                            plywood</span></div>
+                    <div class="summary-row"><span class="k">Peak thrust</span><span class="v">1,850 N</span></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-column">
+            <div class="footer-logo-row">
+                <img src="./images/logo.png" alt="UBC Thunderbird Aero Design Team Logo" class="footer-logo">
+                <h2>UBC Thunderbird Aero Design Team</h2>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula, sapien in pharetra mattis,
+                risus
+                nibh
+                semper justo, ut dictum elit risus et lectus. Morbi quam libero, maximus ac porttitor et, congue
+                vitae
+                quam.
+                Nam
+                nibh risus, condimentum rutrum erat eu, efficitur
+            </p>
+            <br>
+            <br>
+            <p>
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                EMAIL HERE
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h2>Site Map</h2>
+
+            <li><a href="#home" class="sticky-nav-link">Home</a></li>
+            <li><a href="about.html" class="sticky-nav-link">About</a></li>
+            <li><a href="liquid.html" class="sticky-nav-link">Liquid</a></li>
+            <li><a href="solid.html" class="sticky-nav-link">Solid</a></li>
+            <li><a href="#contact" class="sticky-nav-link">Contact</a></li>
+        </div>
+    </footer>
+
+</body>
+
+</html>

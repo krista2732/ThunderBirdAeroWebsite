@@ -14,5 +14,8 @@
     --failure-colour: #f87171;
 
     --page-width: 60%;
-    --nav-height: 100px
+    --nav-height: 100px;
+    --heading-colour: white;
+    --muted-text-colour: #a0a0a0;
+    --divider-colour: #333333;
 }
