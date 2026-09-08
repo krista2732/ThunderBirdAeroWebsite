@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UBC Thunderbird Aero Design Team</title>
+
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <!-- Local -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/back_to_top.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/scroll_prompt.css" />
+    <link rel="stylesheet" href="css/rocket.css" />
+    <script src="js/back_to_top.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script src="js/scroll_prompt.js" defer></script>
+
+</head>
+
+<!-- Navigation Bar -->
+<nav class="sticky-nav" id="stickyNav">
+    <div class="sticky-nav-inner">
+        <a href="index.html" class="sticky-nav-logo">
+            <img src="./images/logo.png" alt="UBC Thunderbird Aero Design Team Logo" class="nav-logo">
+        </a>
+
+        <ul class="sticky-nav-links">
+            <li><a href="index.html" class="sticky-nav-link">Home</a></li>
+            <li><a href="team.html" class="sticky-nav-link">The Team</a></li>
+            <li><a href="liquid.html" class="sticky-nav-link">Liquid</a></li>
+            <li><a href="solid.html" class="sticky-nav-link">Solid</a></li>
+            <li><a href="index.html#contact" class="sticky-nav-link">Contact</a></li>
+
+        </ul>
+
+        <!-- optional: hamburger for mobile, toggled by the JS -->
+        <button class="sticky-nav-toggle" id="stickyNavToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Back to top button -->
+<button id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+</button>
+
+<body>
+    <section class="rocket-page">
+
+        <div class="rocket-header">
+            <h1>Stoodies</h1>
+            <p></p>
+        </div>
+
+        <!-- FULL ROCKET -->
+        <div class="rocket-section" id="Airframe">
+            <div class="rocket-section-header">
+                <h2>Airframe</h2>
+                <div class="rocket-section-line"></div>
+            </div>
+
+            <div class="rocket-content-grid">
+                <p class="rocket-section-intro"></p>
+                <div class="rocket-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/stoodis_explode_airframe.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Length</span><span class="v">105"</span></div>
+                    <div class="summary-row"><span class="k">Diameter</span><span class="v">5"</span></div>
+                    <div class="summary-row"><span class="k">Liftoff mass</span><span class="v">28 kg</span></div>
+                    <div class="summary-row"><span class="k">Target apogee</span><span class="v">10,000 m</span></div>
+                    <div class="summary-row"><span class="k">Top Speed</span><span class="v">Mach 2.5</span></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- AVIONICS -->
+        <div class="rocket-section" id="avionics">
+            <div class="rocket-section-header">
+                <h2>avionics</h2>
+                <div class="rocket-section-line"></div>
+            </div>
+
+            <div class="rocket-content-grid">
+                <p class="rocket-section-intro"></p>
+
+                <div class="rocket-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/stoodis_explode_avionics.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Flight computers</span><span class="v">2, redundant</span>
+                    </div>
+                    <div class="summary-row"><span class="k">Sensors</span><span class="v">Barometric + IMU</span></div>
+                    <div class="summary-row"><span class="k">Power</span><span class="v">2x 9V, isolated</span></div>
+                    <div class="summary-row"><span class="k">Pyro channels</span><span class="v">4</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ENGINE -->
+        <div class="rocket-section" id="engine">
+            <div class="rocket-section-header">
+                <h2>engine</h2>
+                <div class="rocket-section-line"></div>
+            </div>
+
+            <div class="rocket-content-grid">
+                <p class="rocket-section-intro"></p>
+                <div class="rocket-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/stoodis_explode_engine.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Max Thrust</span><span class="v">3.96 kN</span></div>
+                    <div class="summary-row"><span class="k">Avg. Thrust</span><span class="v">3.51 kN</span></div>
+                    <div class="summary-row"><span class="k">Total Impulse</span><span class="v">22166 Ns</span></div>
+                    <div class="summary-row"><span class="k">Camber Diameter</span><span class="v">3.328 in</span></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="sponsors">
+            <h2>Our Sponsors</h2>
+            <div class="sponsor-grid">
+                <img src="./images/ansys.png" alt="Ansys" class="sponsor-logo">
+                <img src="./images/csa.png" alt="CSA" class="sponsor-logo">
+                <img src="./images/mda.png" alt="MDA" class="sponsor-logo">
+                <img src="./images/pantheon.png" alt="Pantheon" class="sponsor-logo">
+                <img src="./images/shop3d.png" alt="Shop3D" class="sponsor-logo">
+                <img src="./images/ubc.png" alt="UBC" class="sponsor-logo">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
