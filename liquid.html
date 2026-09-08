@@ -77,30 +77,32 @@
             </div>
 
             <div class="rocket-content-grid">
-                <p class="rocket-section-intro">
-                    Skoden is a 5” OD rocket constructed of CNC Machined, Waterjet, and 3D Printed 6061-T6 Aluminum, G12
-                    Fiberglass Bodytubes, and 3D Printed PA612CF and PA12GF airframe and support components.
-                    <br>
-                    <br>
-                    A High Level breakdown of materials, methods, and manufacturing follows:
-
-                    <br>
-                    <br>
-                    Beginning at the Nosecone, it follows a 3:1 Tangent Ogive geometry to prioritize strength over
-                    aerodynamics, and is 3D Printed with PA612CF filament with a Bambu X1E. It has a 6061-T6 tip with an
-                    M10
-                    <br>
-                    <br>
-                    thread which serves 3 purposes; thermal protection, impact resistance, and a robust thread to
-                    integrate
-                    a threaded rod running to a titanium eyenut, mounted against a 6061 plate, used for recovery,
-                    ensuring
-                    that nosecone, and eyenut mounting, are as robust as possible during descent.
-
-                    <br>
-                    <br>
-                    We then have a half metre of G12 fibreglass bodytube, cut in two portions, with control volumes on
-                    either side for main and drogue recovery.
+                <p class="rocket-section-para">
+                    The Skoden rocket’s airframe is engineered to fit within a strict 5-inch
+                    geometric envelope, designed to optimize aerodynamic performance while maintaining structural
+                    integrity for a target apogee of 10 km. The vehicle measures 2675 mm in length and features a 4-fin
+                    configuration, with fin root cords of 275 mm and a height of 125 mm. The total dry mass of the
+                    vehicle is 16.9 kg, increasing to a wet mass of 28.1 kg when fully loaded.
+                    <br><br>
+                    The primary structure utilizes 5-inch outer diameter 6061-T6 aluminum tubing, with a thickness of
+                    0.125 inches. To address thermal loads between the engine casing and the composite PA12 GF fincan,
+                    the team implemented a 6061-T6 radially-propagating structure around the phenolic base. This design
+                    modification serves two purposes: it creates necessary thermal separation between layers and reduces
+                    the phenolic chamber mass by 54% to 1.32 kg. This structural change significantly improved the
+                    vehicle’s static stability margin to 2.85 cal.
+                    <br><br>
+                    The airframe is highly integrated, housing the concentric autogenously pressurized tanks and the
+                    propulsion manifold systems. During the Design for Manufacturing and Assembly (DFMA) assessment, the
+                    team optimized the internal layout, notably eliminating hose clamps between the injector manifold
+                    and the concentric tanks' bottom bulkhead.
+                    <br><br>
+                    To ensure the reliability of the pressurized systems, the team developed comprehensive Geometrical
+                    Dimensioning and Tolerancing (GD&T) specifications. These studies, informed by chemical
+                    compatibility data and Parker O-Ring guides, dictate surface finish requirements for all fluidic
+                    manifolds to prevent boiloff and leakage. The structure has been validated through high-fidelity
+                    structural and thermal simulations, ensuring the airframe withstands aerodynamic, thermal, and
+                    dynamic loads across the entire flight domain. The result is a robust, lightweight structure capable
+                    of supporting the high thrust-to-weight ratio required for the Skoden's mission objectives.
                 </p>
                 <div class="rocket-video">
                     <video autoplay muted loop playsinline>
@@ -110,10 +112,11 @@
 
                 <div class="rocket-summary">
                     <h3>Key specs</h3>
-                    <div class="summary-row"><span class="k">Height</span><span class="v">3.2 m</span></div>
-                    <div class="summary-row"><span class="k">Diameter</span><span class="v">15.2 cm</span></div>
-                    <div class="summary-row"><span class="k">Liftoff mass</span><span class="v">22.4 kg</span></div>
-                    <div class="summary-row"><span class="k">Target apogee</span><span class="v">10,000 ft</span></div>
+                    <div class="summary-row"><span class="k">Length</span><span class="v">105"</span></div>
+                    <div class="summary-row"><span class="k">Diameter</span><span class="v">5"</span></div>
+                    <div class="summary-row"><span class="k">Liftoff mass</span><span class="v">28 kg</span></div>
+                    <div class="summary-row"><span class="k">Target apogee</span><span class="v">10,000 m</span></div>
+                    <div class="summary-row"><span class="k">Top Speed</span><span class="v">Mach 2.5</span></div>
                 </div>
             </div>
 
@@ -128,20 +131,31 @@
             </div>
 
             <div class="rocket-content-grid">
-                <p class="rocket-section-intro">
-                    Recovery systems are controlled using 2 DMR Blue Raven flight computers, each connected to two 12g
-                    EAGLE
-                    CO2 ejection cartridges. The avionics bay uses 2 fully redundant, separate power supplies for the
-                    EggTimer Mini GPS Transmitter and Trackers, as well as a 4K Hawkeye Camera facing downwards for
-                    footage
-                    capture.
-
-                    Tracking and transmission is split into two portions of RF design, using the Egg Timer Mini TX,
-                    paired
-                    with the RX + Redundant Battery systems and LCD-GPS Modules. These may be swapped by a featherweight
-                    altimeter later in the design cycle depending on team budget. Inverted Pursuits Labs pull pin
-                    switches
-                    will be used on each flight computer prior to launch.
+                <p class="rocket-section-para">
+                    The Skoden rocket’s avionics and communication architecture is designed to ensure robust telemetry,
+                    command, and control throughout the mission, leveraging a combination of long-range wireless
+                    protocols and onboard automated controllers. The telemetry and transmission system relies on a
+                    LoRaWAN communication architecture operating on 2.4 GHz RF channels, facilitating a reliable link
+                    between the onboard systems and Ground Support Equipment (GSE) receiver PCs. This setup is critical
+                    for monitoring the vehicle's state in real-time, including pressure, temperature, and battery
+                    telemetry during both pre-flight fill procedures and flight operations.
+                    <br><br>
+                    Control of the rocket's propulsion and fluidic systems is managed by an on-board Propulsion
+                    Thermalfluidic Systems Controller. This unit is integrated into the vehicle’s flight systems to
+                    manage critical operational states. The architecture employs a robust sensor suite that feeds data
+                    into this controller, allowing for dynamic monitoring of nitrous oxide mass, ethanol levels, and
+                    system pressures. Safety is further bolstered by the integration of line cutters for CO2 actuation,
+                    ensuring the vehicle can be safely managed or dumped in the event of an anomaly.
+                    <br><br>
+                    The recovery system architecture is intrinsically linked to the avionics suite, which is tasked with
+                    initiating the dual-break recovery sequence at the appropriate apogee. To ensure precise post-flight
+                    recovery and data analysis, the system includes official altitude logging and continuous rocket
+                    tracking transmissions. The integration of high-fidelity sensors and stable RF links allows the team
+                    to perform 3-sigma Monte Carlo simulations of the landing zone, mapping flight trajectories and
+                    ensuring that the recovery system can reliably pinpoint landing locations. By using LoraWAN and HAM
+                    radio channels, the avionics suite provides redundancy in communication, ensuring that critical
+                    telemetry reaches the ground team throughout the flight and descent phases, ultimately validating
+                    the rocket's performance and supporting post-flight data analysis.
                 </p>
 
                 <div class="rocket-video">
@@ -152,11 +166,14 @@
 
                 <div class="rocket-summary">
                     <h3>Key specs</h3>
-                    <div class="summary-row"><span class="k">Flight computers</span><span class="v">2, redundant</span>
-                    </div>
-                    <div class="summary-row"><span class="k">Sensors</span><span class="v">Barometric + IMU</span></div>
-                    <div class="summary-row"><span class="k">Power</span><span class="v">2x 9V, isolated</span></div>
-                    <div class="summary-row"><span class="k">Pyro channels</span><span class="v">4</span></div>
+                    <div class="summary-row"><span class="k">Flight computers</span><span class="v">2x Blue Raven,
+                            redundant (DMR)</span></div>
+                    <div class="summary-row"><span class="k">GPS tracking</span><span class="v">OTS 900MHz +
+                            MissileWorks RTx, redundant</span></div>
+                    <div class="summary-row"><span class="k">Pyro channels</span><span class="v">4x Eagle CO2 ejection
+                            canisters</span></div>
+                    <div class="summary-row"><span class="k">Data acquisition</span><span class="v">3x datasets, 2 DAQ
+                            systems (12-state + quaternion)</span></div>
                 </div>
             </div>
 
@@ -170,7 +187,7 @@
             </div>
 
             <div class="rocket-content-grid">
-                <p class="rocket-section-intro">
+                <p class="rocket-section-para">
 
                     Skoden’s liquid engine uses a fuel centred coaxial shear injector with 44 elements. Stainless steel
                     hypodermic needles are bonded to the injector with DP 420 epoxy, with the ethanol line running
@@ -239,12 +256,10 @@
 
                 <div class="rocket-summary">
                     <h3>Key specs</h3>
-                    <div class="summary-row"><span class="k">Motor</span><span class="v">L1720, 75 mm</span></div>
-                    <div class="summary-row"><span class="k">Retention</span><span class="v">Machined aluminum
-                            cup</span></div>
-                    <div class="summary-row"><span class="k">Centering rings</span><span class="v">3, birch
-                            plywood</span></div>
-                    <div class="summary-row"><span class="k">Peak thrust</span><span class="v">1,850 N</span></div>
+                    <div class="summary-row"><span class="k">Max Thrust</span><span class="v">3.96 kN</span></div>
+                    <div class="summary-row"><span class="k">Avg. Thrust</span><span class="v">3.51 kN</span></div>
+                    <div class="summary-row"><span class="k">Total Impulse</span><span class="v">22166 Ns</span></div>
+                    <div class="summary-row"><span class="k">Camber Diameter</span><span class="v">3.328 in</span></div>
                 </div>
 
             </div>
