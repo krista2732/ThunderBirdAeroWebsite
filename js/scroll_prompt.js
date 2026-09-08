@@ -1,17 +1,17 @@
 const scrollPrompt = document.getElementById("scrollPrompt");
-const contactSection = document.getElementById("contact");
+const nextSection = document.getElementById("land");
 
 scrollPrompt.addEventListener("click", () => {
-    contactSection.scrollIntoView({
+    nextSection.scrollIntoView({
         behavior: "smooth"
     });
 });
 
 
 window.addEventListener("scroll", () => {
-    const contactTop = contactSection.getBoundingClientRect().top;
+    const nextTop = nextSection.getBoundingClientRect().top;
 
-    if (contactTop <= window.innerHeight) {
+    if (nextTop <= window.innerHeight) {
         scrollPrompt.classList.add("hidden");
     } else {
         scrollPrompt.classList.remove("hidden");
