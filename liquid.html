@@ -187,66 +187,30 @@
             </div>
 
             <div class="rocket-content-grid">
-                <p class="rocket-section-para">
-
-                    Skoden’s liquid engine uses a fuel centred coaxial shear injector with 44 elements. Stainless steel
-                    hypodermic needles are bonded to the injector with DP 420 epoxy, with the ethanol line running
-                    above,
-                    and a radial distribution manifold channels flow of the nitrous to the outer nitrous elements,
-                    maintaining pressure and mass flow across each element.
-                    <br>
-                    Extensive hand calculations from Atomization in Coaxial Jet Injectors, Lucien Vingert and Pierre
-                    Gicquel
-                    were used to validate atomization, and once the limits imposed by assumptions on surface energy and
-                    tension due to the multiphase, nonlinear, and non-deterministic characteristics of ethanol and
-                    nitrous,
-                    simulations began.
-
-                    <br>
-                    Above the injector face is a manifold that holds our two poppet valves. Much guidance has come from
-                    leaders like Julian Rice in the design and machining of these elements. These poppet valves are
-                    pneumatically actuated from their nominally closed state and have a PEEK cap to prevent mechanical
-                    damage and ensure a proper sealing surface, as they are inline. When the system is pressurized with
-                    CO2,
-                    the valves depress, allowing the flow of our oxidizer and fuel.
-
-                    <br>
-                    These valves, along with the Injector face and manifold, are CNC machined overseas. Like our
-                    bulkheads,
-                    these are tapped and bored for M5 bolts radially aligned.
-
-                    <br>
-                    Monte Carlo flow simulations were used across different temperatures and pressures of oxidizer and
-                    fuel
-                    in our tanks to understand the range of flow rates, and engine impulse, that may be seen.
-
-                    <br>
-                    On a high level, engine ignition is guided from a modified Estes C3 motor with an E-match, and
-                    Piranha
-                    line cutters actuate CO2 lines, which is controlled from our engine flight computer.
-
-                    <br>
-                    Finally, we use a Phenolic Ablative for the engine chamber with a Graphite throat, both of which
-                    have
-                    been CNC machined. A “Phenolic Retainer” block is bolted radially at the base of the Fincan, fixing
-                    these components into the control volume and against the Injector faceplate. The designs have been
-                    proven with hand calculations and simulation, and the control volume is maintained with O rings in
-                    the
-                    Phenolic. A neat design choice was integrating a 6061 sleeve around the midsection of the Phenolic
-                    (between its outer wall and the Fincan) that acts like a coffee sleeve — this is a secured air
-                    volume
-                    that lowers the temperatures seen by the Fincan through conduction with the engine chamber.
-
-                    <br>
-                    Values shown in our included .eng file come from HalfCatSim spreadsheets, with all inputs validated
-                    from
-                    simulations and industry guidance. Skoden shows an initial thrust of 3445N and an impulse of 17078
-                    Ns,
-                    aligned with an N3115 classification.
-
-                    <br>
-                    All engine components have been designed, machined, and are in-hand awaiting cold flow testing
-                    components.
+                <p class="rocket-section-para">Skoden's propulsion system is a liquid bipropellant engine using nitrous
+                    oxide and ethanol, designed within a 5" geometric envelope. The engine targets 3.960 kN max thrust
+                    with an average of 3.507 kN, generating a total impulse of 22,166 Ns over roughly a 6-7 second burn.
+                    Nominal propellant flow is 1.439 kg/s of nitrous and 0.340 kg/s of ethanol, giving an O/F ratio of
+                    4.235 and a characteristic length (L*) of 0.55m, with a 3.328" chamber diameter.
+                    <br><br>
+                    At the heart of the engine is a 75-element, fuel-centered coaxial shear injector, machined as a
+                    single piece from 6061 aluminum and fitted with 304 stainless steel hypodermic needles bonded in
+                    place with JB Weld epoxy. Nitrous is distributed to the elements through an annular manifold between
+                    two o-rings, achieving mass flow variation of under 0.5% across the eight radial feed channels.
+                    <br><br>
+                    The combustion chamber uses a linen phenolic ablative liner (Garolite LE) paired with a
+                    custom-machined 75mm graphite nozzle from Loki Research, secured with RTV silicone and protected by
+                    a G10 insulation plate at the nozzle-carrier joint. Two custom pneumatic sleeve valves with PTFE
+                    poppets control propellant flow, actuated by ground-side CO2 and held closed via spring-loaded
+                    positive area differential; recent redesigns cut pressure drop across these valves from 2.0 MPa to
+                    1.2 MPa.
+                    <br><br>
+                    Propellant is stored in autogenously pressurized concentric tanks (operating ~5.0 MPa, burst-rated
+                    with a 2.33 safety factor), fed through radial manifold passages to the injector. Design work has
+                    focused heavily on reducing pressure drops (from 2.5 MPa to 0.9 MPa near nominal flow) and
+                    reconciling ethanol vs. nitrous poppet valve geometry differences. Upcoming cold flow testing (with
+                    Reynolds-matching) and a hot fire at FAR are planned to validate these thermofluidic models against
+                    real performance.
                 </p>
                 <div class="rocket-video">
                     <video autoplay muted loop playsinline>
