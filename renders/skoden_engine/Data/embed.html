@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visualize - Interactive Image</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <meta name="viewport" content="width=1024, maximum-scale=1.2" />
+
+    <!-- To embed into another site, include the following scripts -->
+    <!-- You may want to minify them for production environments -->
+    <script src="js/prototype.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/apple_core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vr.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/library.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/threesixty.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/wheelzoom.js" type="text/javascript"></script>
+    <script src="js/observers.js" type="text/javascript" defer></script>
+
+    <!-- The following are not required for embedding -->
+    <script src="js/viewer.js" type="text/javascript" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        main,
+        #threesixty,
+        #threesixty-main {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
+            display: block;
+        }
+
+        #viewer {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* temporarily comment this out to test */
+        #viewer canvas,
+        #viewer img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="threesixty" class="container">
+            <div id="threesixty-main">
+                <!-- To embed into another site, include the viewer element -->
+                <div id="viewer"></div>
+        </section>
+        </div>
+    </main>
+</body>
+
+</html>
