@@ -73,7 +73,7 @@
    ================================ */
 
 .team-member {
-    background-color: var(--secondary-element-colour);
+    background-color: var(--secondary-background);
     border-radius: var(--primary-border-radius);
     overflow: hidden;
 

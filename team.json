@@ -2,27 +2,27 @@
     "avionics": [
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Avionics Lead",
             "desc": "Placeholder description for an avionics team member."
         },
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Avionics Engineer",
             "desc": "Placeholder description for an avionics team member."
         }
     ],
     "airframe": [
         {
-            "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "name": "Chris Elwell",
+            "image": "images/profiles/chris_elwell.jpg",
             "title": "Airframe Lead",
-            "desc": "Placeholder description for an airframe team member."
+            "desc": "5th year mechatronics student with experience in SolidWorks, including SolidWorks FEA and CFD, and programming. Developer of this website."
         },
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Airframe Engineer",
             "desc": "Placeholder description for an airframe team member."
         }
@@ -30,43 +30,43 @@
     "software": [
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Software Lead",
             "desc": "Placeholder description for a software team member."
        },
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Software Lead",
             "desc": "Placeholder description for a software team member."
        },
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Software Lead",
             "desc": "Placeholder description for a software team member."
        },
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Software Lead",
             "desc": "Placeholder description for a software team member."
        },
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Software Lead",
             "desc": "Placeholder description for a software team member."
        },
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Software Lead",
             "desc": "Placeholder description for a software team member."
        },
         {
             "name": "Team Member",
-            "image": "images/placeholder.jpg",
+            "image": "images/logo.png",
             "title": "Software Lead",
             "desc": "Placeholder description for a software team member."
        }
