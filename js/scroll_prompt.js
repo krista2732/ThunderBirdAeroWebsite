@@ -1,5 +1,5 @@
 const scrollPrompt = document.getElementById("scrollPrompt");
-const nextSection = document.getElementById("land");
+const nextSection = document.getElementById("goal");
 
 scrollPrompt.addEventListener("click", () => {
     nextSection.scrollIntoView({
