@@ -1,74 +1,41 @@
 {
-    "avionics": [
+    "Mechanical": [
         {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Avionics Lead",
-            "desc": "Placeholder description for an avionics team member."
+            "name": "Raven Caron",
+            "image": "images/profiles/raven_caron.jpg",
+            "title": "Captain & President",
+            "origin": "Sagamok Nation",
+            "desc": "I am 5th year Integrated Engineering student who loves hifi audio, literature, and specialty coffee. Although I work in robotics, I miss being behind an espresso machine in cafes... I also like Solidworks and Rockets"
         },
-        {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Avionics Engineer",
-            "desc": "Placeholder description for an avionics team member."
-        }
-    ],
-    "airframe": [
         {
             "name": "Chris Elwell",
             "image": "images/profiles/chris_elwell.jpg",
-            "title": "Airframe Lead",
-            "desc": "5th year mechatronics student with experience in SolidWorks, including SolidWorks FEA and CFD, and programming. Developer of this website."
+            "title": "VP Simulation",
+            "origin": "British Isles",
+            "desc": "I am a 5th year Mechatronics student with experience in SolidWorks, including SolidWorks FEA and CFD, and programming. Developer of this website. I enjoy hiking and spikeball."
         },
         {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Airframe Engineer",
-            "desc": "Placeholder description for an airframe team member."
+            "name": "Rowan Tetrault",
+            "image": "images/profiles/rowan_tetrault.jpg",
+            "title": "VP Airfame",
+            "origin": "Wabigoon Lake Ojibway Nation",
+            "desc": "I am a third year integrated engineering student, specializing in MECH and MTRLS, but am currently on co-op at Locus Robotics. I have past experience from an internship at Daher, and enjoy refereeing and playing soccer in my free time."
+        },
+        {
+            "name": "Sam Sianipar",
+            "image": "images/profiles/sam_sianipar.jpg",
+            "title": "VP Recovery",
+            "origin": "Singapore",
+            "desc": "I am a 3rd mechanical engineering student, currently back home in Singapore on co-op as a Propulsion Research Intern for the Satellite Technology and Research (STAR) Centre. I really love design and hands-on problem solving, and in my free time, I take photos and play tennis."
         }
     ],
-    "software": [
+    "Electrical": [
         {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Software Lead",
-            "desc": "Placeholder description for a software team member."
-       },
-        {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Software Lead",
-            "desc": "Placeholder description for a software team member."
-       },
-        {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Software Lead",
-            "desc": "Placeholder description for a software team member."
-       },
-        {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Software Lead",
-            "desc": "Placeholder description for a software team member."
-       },
-        {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Software Lead",
-            "desc": "Placeholder description for a software team member."
-       },
-        {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Software Lead",
-            "desc": "Placeholder description for a software team member."
-       },
-        {
-            "name": "Team Member",
-            "image": "images/logo.png",
-            "title": "Software Lead",
-            "desc": "Placeholder description for a software team member."
-       }
+            "name": "Derin Aladogan",
+            "image": "images/profiles/derin_aladogan.jpg",
+            "title": "VP",
+            "origin": "BLANK",
+            "desc": "I completed my undergraduate in Chemical and Biological Engineering in 2026, and I am currently pursuing a masters in Mechanical Engineering. I'm passionate about 3D modelling, especially when it comes to artistic design."
+        }
     ]
 }
