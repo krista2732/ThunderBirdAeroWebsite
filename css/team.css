@@ -121,7 +121,15 @@
 .member-title {
     color: var(--highlight-colour);
     font-size: 0.95rem;
+    font-weight: 600;
 
+    margin: 0 0 4px;
+}
+
+.member-origin {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    font-weight: 600;
     margin: 0 0 16px;
 }
 

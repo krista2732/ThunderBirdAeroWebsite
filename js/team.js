@@ -116,13 +116,19 @@ function createMemberCard(member) {
     name.textContent = member.name;
 
 
-    // Title
+    // title
 
     const title = document.createElement("p");
 
     title.className = "member-title";
     title.textContent = member.title;
 
+    // origin
+
+    const origin = document.createElement("p");
+
+    origin.className = "member-origin";
+    origin.textContent = member.origin;
 
     // Description
 
@@ -136,6 +142,7 @@ function createMemberCard(member) {
 
     content.appendChild(name);
     content.appendChild(title);
+    content.appendChild(origin);
     content.appendChild(description);
 
     card.appendChild(image);

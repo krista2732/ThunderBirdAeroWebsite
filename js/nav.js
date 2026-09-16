@@ -37,7 +37,6 @@ if (navLinks) {
     navLinks.querySelectorAll('a.sticky-nav-link').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('open');
-            dropdown.classList.remove('open');
             body.classList.remove('nav-open');
             nav.classList.remove('open');
         });
