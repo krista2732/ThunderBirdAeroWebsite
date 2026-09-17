@@ -64,7 +64,10 @@
 
         <div class="rocket-header">
             <h1>Stoodis</h1>
-            <p></p>
+            <p>"Stoodis" is an Indigenous slang term meaning “let’s do this,” often used as a reply to “Skoden” when
+                accepting a challenge.
+            </p>
+
         </div>
 
         <!-- FULL ROCKET -->
@@ -76,31 +79,25 @@
 
             <div class="rocket-content-grid">
                 <p class="rocket-section-para">
-                    Stoodis is a 175 cm rocket with a 5.15-inch outer diameter, built to fly on an Aerotech K535W-14
-                    motor and reach a projected apogee near 3,700 ft. The airframe combines 3D-printed structural
-                    components with fiberglass body tubing, chosen to balance strength, weight, and cost across the
-                    vehicle.
+                    Stoodis is a 175cm rocket with a 5.15” outer diameter, built to fly on an Aerotech K535W-14 motor
+                    and reach a projected apogee near 4000ft. The airframe leverages advanced manufacturing to balance
+                    strength, weight, and cost across the vehicle!
+                    The body tube is made of G12 Fibreglass tubing from Wildman Rocketry, while the Nosecone, Avionics
+                    Bay, Fincan, and Bulkheads are 3D printed from nylon-composite filaments. Total vehicle mass, with
+                    the motor, comes to only 7.81kg with a static stability margin of 3.4 calibers.
                     <br><br>
-                    The nosecone follows a Von-Karman aerodynamic profile in CAD, though the team will manufacture it as
-                    a biconic shape since it closely approximates Von-Karman performance while being easier to produce.
-                    It's 3D-printed from PA612CF, a glass-fiber-reinforced polymer chosen over aluminum for its lower
-                    weight, cost-effectiveness, and stiffness under aerodynamic loading. The finished nosecone weighs
-                    905g, with an additional 1000g of tunable mass built in to adjust flight performance depending on
-                    final weight or weather conditions on launch day.
+                    The Nosecone follows the Von-Karmann profile with a 6061-T6 machined nosecone tip. Although the
+                    thermal loads throughout flight do not warrant a metallic endpoint, we are able to machine threads
+                    into this component and run a threaded rod down to the baseplate of the nosecone. This ensures that
+                    the forces of recovery are not in tension on the printed piece where it is weakest, and allows us to
+                    apply compressive forces when epoxy is curing between the two halves of the cone. The nosecone is 3D
+                    Printed from PA612-CF20 filament from Fiberon. This has a low mass and high stiffness; just what we
+                    need!
                     <br><br>
-                    The fin can, at the aft end, integrates the fins and houses the motor in an inner tube. It uses a
-                    tapered boat-tail design for structural support and aerodynamic control, with the fins slotted
-                    through the outer shell for reinforcement and a plate screwed into the internal structure to keep
-                    the fins seated during flight. The outer shell is 3D-printed PA12 glass fiber, while the fins and
-                    bottom plate are cut from 6061-T6 aluminum — chosen over wood (too heavy) and cardboard (too weak)
-                    for the best strength-to-weight balance.
-                    <br><br>
-                    The fin can, at the aft end, integrates the fins and houses the motor in an inner tube. It uses a
-                    Two bulkheads seal the CO2 canister volumes, secured by friction-fit and Nylon 4-40 shearing pins,
-                    capped with water-jetted T6 aluminum plates. Body tube sections are G12 fiberglass. Total vehicle
-                    mass, with motor, comes to 7,814g, with the center of gravity at 41.6" and center of pressure at
-                    59.0" from the nosecone tip — giving a static stability margin of 3.38 calibers, comfortably within
-                    safe limits.
+                    The Fincan integrates the ⅛” thick 6061-T6 fins and radially constrains the motor. It uses a
+                    boat-tail design to minimize drag, and the aluminum fins are slotted through the outer shell for
+                    reinforcement. This component is also 3D Printed from Fiberon’s PA612-CF20 for the same benefits
+                    shared above and our team's experience with these advanced filaments.
                 </p>
                 <div class="rocket-content">
                     <div class="rocket-video">
@@ -117,7 +114,7 @@
                         <div class="summary-row"><span class="k">Liftoff mass</span><span class="v">7,814 g</span></div>
                         <div class="summary-row"><span class="k">Motor</span><span class="v">Aerotech K535W-14</span>
                         </div>
-                        <div class="summary-row"><span class="k">Target apogee</span><span class="v">3,700 ft (10 mph
+                        <div class="summary-row"><span class="k">Target apogee</span><span class="v">4,000 ft (10 mph
                                 winds)</span></div>
                     </div>
                     <div class="rocket-render">
@@ -141,37 +138,35 @@
         <!-- AVIONICS -->
         <div class="rocket-section" id="avionics">
             <div class="rocket-section-header">
-                <h2>avionics</h2>
+                <h2>Avionics</h2>
                 <div class="rocket-section-line"></div>
             </div>
 
             <div class="rocket-content-grid">
                 <p class="rocket-section-para">
-                    The avionics bay sits at the center of the rocket, epoxied to the inner radius of the body tube
-                    between the upper and lower recovery control volumes. It houses two independent Blue Raven flight
-                    altimeters arranged in a dual-modular-redundant (DMR) architecture, meaning either altimeter can
-                    independently trigger both parachute deployments if the other loses power or misreads the rocket's
-                    state.
+                    The avionics bay sits atop a waterjet 1” 6061-T6 ring that is epoxied to the inner radius of the
+                    body tube between the upper and lower recovery control volumes. It houses two independent Blue Raven
+                    flight altimeters arranged in a DMR architecture, meaning either altimeter can independently trigger
+                    both parachute deployments if the other loses power or misreads the rocket's state. Alongside these
+                    two dual-redundant flight computers are two GPS modules to ensure successful tracking from launchpad
+                    to touchdown.
                     <br><br>
-                    Each altimeter fires two 12g Eagle CO2 canisters per parachute — one for the drogue at apogee, and
-                    one for the main at 700 ft — chosen for reliable, consistent ejection compared to traditional
-                    black-powder charges. An EggTimer GPS Mini transmitter, on its own dedicated pull-pin and power
-                    circuit, provides independent position tracking separate from the recovery electronics.
+                    Each altimeter fires two 12g Eagle CO2 canisters per parachute: one for the drogue at apogee, and
+                    one for the main at around 700 ft. The mains’ values are confirmed on-site depending on drift
+                    calculations with live weather. CO2 ejection was chosen for the increased reliability and
+                    repeatability compared to black-powder charges.
                     <br><br>
+                    Each altimeter fires two 12g Eagle CO2 canisters per parachute: one for the drogue at apogee, and
                     Arming is handled entirely through mechanical pull-pin switches rather than wireless or magnetic
-                    arming systems. The team specifically favored pull pins because they require no power or signal to
-                    function, give a visible physical indication of armed state, and eliminate failure modes tied to
-                    software, RF interference, or battery dropout — trading some convenience for reliability in a
-                    safety-critical system.
+                    arming systems. We favour pull-pin switches because they require no power or signal to function,
+                    provide a visible physical indication of armed state, and eliminate failure modes tied to software,
+                    RF interference, or battery dropout.
                     <br><br>
-                    Structurally, an M10 threaded rod runs through the avionics bay, anchoring eyenuts on either end
-                    that connect via Kevlar cords to the parachutes and the bulkheads above and below. The bay's
-                    3D-printed housing (PA6GF) weighs 427g, with electronics currently estimated at 200g pending final
-                    battery and CO2 canister weights.
-                    <br><br>
-                    The bay was originally planned for the nosecone but was relocated into the central body tube after
-                    the team found sufficient space there — simplifying wiring, switch placement, and integration while
-                    keeping it physically isolated from the separate challenge/payload electronics housed alongside it.
+                    Each altimeter fires two 12g Eagle CO2 canisters per parachute: one for the drogue at apogee, and
+                    The Avionics Bay is 3D Printed from Fiberons PA6-GF to ensure it doesnt interrupt any communications
+                    to our team down below while continuing with our practise of additive manufacturing. An M10 threaded
+                    rod runs through the avionics bay, anchoring eye nuts on either end that connect to the parachutes
+                    with 1” tubular nylon and Kevlar shock cords, and those parachutes to the bulkheads above and below
                 </p>
 
                 <div class="rocket-content">

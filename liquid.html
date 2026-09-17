@@ -64,8 +64,10 @@
 
         <div class="rocket-header">
             <h1>Skoden</h1>
-            <p>A look at how Skoden is put together, from the full assembly down to the avionics and engine. Each part
-                below includes an exploded-view animation showing how the pieces fit together.</p>
+            <p>
+                "Skoden" is an Indigenous slang term meaning “let’s go then,” often used to express readiness,
+                challenge, or enthusiasm.
+            </p>
         </div>
 
         <!-- FULL ROCKET -->
@@ -77,31 +79,30 @@
 
             <div class="rocket-content-grid">
                 <p class="rocket-section-para">
-                    The Skoden rocket’s airframe is engineered to fit within a strict 5-inch
-                    geometric envelope, designed to optimize aerodynamic performance while maintaining structural
-                    integrity for a target apogee of 10 km. The vehicle measures 2675 mm in length and features a 4-fin
-                    configuration, with fin root cords of 275 mm and a height of 125 mm. The total dry mass of the
-                    vehicle is 16.9 kg, increasing to a wet mass of 28.1 kg when fully loaded.
+                    Skoden is a liquid rocket that has been designed with a simple philosophy: keep it small, simple,
+                    and easy to integrate. Liquid rockets are complex enough; why reinvent the wheel? These goals in
+                    turn have made it affordable, accessible, and power dense for its size.
                     <br><br>
-                    The primary structure utilizes 5-inch outer diameter 6061-T6 aluminum tubing, with a thickness of
-                    0.125 inches. To address thermal loads between the engine casing and the composite PA12 GF fincan,
-                    the team implemented a 6061-T6 radially-propagating structure around the phenolic base. This design
-                    modification serves two purposes: it creates necessary thermal separation between layers and reduces
-                    the phenolic chamber mass by 54% to 1.32 kg. This structural change significantly improved the
-                    vehicle’s static stability margin to 2.85 cal.
+                    The airframe is only 5” in diameter and cut from 0.125” thickness 6061-T6 tubes. To keep the fuel
+                    and oxidizer tanks as short as possible and fit comfortably in our 105” long airframe, we used
+                    concentric tanks. NOS sits on the outer ring with ETH in the central tube. This compact design has
+                    allowed us to maintain a proper stability margin and fineness ratio with a total dry and wet mass of
+                    17 and 28kg respectively. This is a rocket that can be transported in the back of a sedan and built
+                    on-site.
                     <br><br>
-                    The airframe is highly integrated, housing the concentric autogenously pressurized tanks and the
-                    propulsion manifold systems. During the Design for Manufacturing and Assembly (DFMA) assessment, the
-                    team optimized the internal layout, notably eliminating hose clamps between the injector manifold
-                    and the concentric tanks' bottom bulkhead.
+                    To ensure the reliability of these pressurized systems, all GD&T studies came from proper research
+                    and documentation from HalfCat Rocketry, NASA, Parker O-Ring Guides, and other industry leaders.
+                    Surface roughness, geometric tolerances, bulkhead design, and more has been done with extensive
+                    safety margins dictated by empirical experience. What does this lead to? Trust in the drawings we
+                    send out to be machined without extensive fears of boil-off, leakage, bolt tear-out, or god-forbid
+                    catastrophic failure.
                     <br><br>
-                    To ensure the reliability of the pressurized systems, the team developed comprehensive Geometrical
-                    Dimensioning and Tolerancing (GD&T) specifications. These studies, informed by chemical
-                    compatibility data and Parker O-Ring guides, dictate surface finish requirements for all fluidic
-                    manifolds to prevent boiloff and leakage. The structure has been validated through high-fidelity
-                    structural and thermal simulations, ensuring the airframe withstands aerodynamic, thermal, and
-                    dynamic loads across the entire flight domain. The result is a robust, lightweight structure capable
-                    of supporting the high thrust-to-weight ratio required for the Skoden's mission objectives.
+                    The airframe is highly integrated and rigid. By using the outer tank as a body tube of the rocket
+                    itself, it is very strong, with the remaining vehicle length covered by fiberglass tubing. DFM and
+                    DFA reduced the part count of both the engine and airframe, leading to a goal of assembly in under 1
+                    hour, and the only manufacturing that takes place is 3D Printing and CNC machining, with the latter
+                    outsourced overseas.
+
                 </p>
                 <div class="rocket-content">
                     <div class="rocket-video">
@@ -152,27 +153,27 @@
                     The Skoden rocket’s avionics and communication architecture is designed to ensure robust telemetry,
                     command, and control throughout the mission, leveraging a combination of long-range wireless
                     protocols and onboard automated controllers. The telemetry and transmission system relies on a
-                    LoRaWAN communication architecture operating on 2.4 GHz RF channels, facilitating a reliable link
-                    between the onboard systems and Ground Support Equipment (GSE) receiver PCs. This setup is critical
-                    for monitoring the vehicle's state in real-time, including pressure, temperature, and battery
-                    telemetry during both pre-flight fill procedures and flight operations.
+                    LoRaWAN communication architecture operating on RF channels, facilitating a reliable link between
+                    the onboard systems and Ground Support Equipment. This setup is critical for real-time monitoring of
+                    the vehicle's state, including pressure, temperature, and battery telemetry, during both pre-flight
+                    fill procedures and flight operations.
                     <br><br>
-                    Control of the rocket's propulsion and fluidic systems is managed by an on-board Propulsion
-                    Thermalfluidic Systems Controller. This unit is integrated into the vehicle’s flight systems to
-                    manage critical operational states. The architecture employs a robust sensor suite that feeds data
-                    into this controller, allowing for dynamic monitoring of nitrous oxide mass, ethanol levels, and
-                    system pressures. Safety is further bolstered by the integration of line cutters for CO2 actuation,
-                    ensuring the vehicle can be safely managed or dumped in the event of an anomaly.
+                    An on-board custom Flight Controller employs a robust sensor suite that feeds data to the GSE team,
+                    allowing for dynamic monitoring of NOS mass, ETH levels, and system pressures. Safety is further
+                    bolstered by integrating 3-way ball valves for all fluids, actuated by remote servos. This includes
+                    control of CO2 lines that pressurize the integrated valves above the Injector. In the event of any
+                    anomalies, the fluids can be remotely dumped, and as a further redundant safety mechanism, there is
+                    a fitting above the Nitrous tank that bleeds pressure slowly over time. Even if all valves fail, the
+                    rocket can be safely depressurized with the ingredient of time.
                     <br><br>
-                    The recovery system architecture is intrinsically linked to the avionics suite, which is tasked with
-                    initiating the dual-break recovery sequence at the appropriate apogee. To ensure precise post-flight
-                    recovery and data analysis, the system includes official altitude logging and continuous rocket
-                    tracking transmissions. The integration of high-fidelity sensors and stable RF links allows the team
-                    to perform 3-sigma Monte Carlo simulations of the landing zone, mapping flight trajectories and
-                    ensuring that the recovery system can reliably pinpoint landing locations. By using LoraWAN and HAM
-                    radio channels, the avionics suite provides redundancy in communication, ensuring that critical
-                    telemetry reaches the ground team throughout the flight and descent phases, ultimately validating
-                    the rocket's performance and supporting post-flight data analysis.
+                    The Avionics system is tasked with initiating the dual-deploy recovery sequence at the appropriate
+                    apogee. This system is all OTS, with trusted components from Eggtimer and Blue Raven. These systems
+                    track the rocket's position and allow for proper initiation of the recovery sequence as well as
+                    post-flight data analysis. We have thus performed countless 3-sigma Monte Carlo simulations of the
+                    landing zone, mapping flight and descent trajectories in OpenRocket and RocketPy. With high-fidelity
+                    weather data from networks of balloons far into the atmosphere, and redundant LoraWAN and HAM radio
+                    communication channels, we can have assurance in successful recovery of Skoden, ready for the next
+                    launch.
                 </p>
 
                 <div class="rocket-content">
@@ -222,30 +223,30 @@
             </div>
 
             <div class="rocket-content-grid">
-                <p class="rocket-section-para">Skoden's propulsion system is a liquid bipropellant engine using nitrous
-                    oxide and ethanol, designed within a 5" geometric envelope. The engine targets 3.960 kN max thrust
-                    with an average of 3.507 kN, generating a total impulse of 22,166 Ns over roughly a 6-7 second burn.
-                    Nominal propellant flow is 1.439 kg/s of nitrous and 0.340 kg/s of ethanol, giving an O/F ratio of
-                    4.235 and a characteristic length (L*) of 0.55m, with a 3.328" chamber diameter.
+                <p class="rocket-section-para">
+                    Skoden's propulsion system is a liquid bipropellant engine using NOS and ETH, designed within a 5"
+                    geometric envelope. The engine targets 3.96 kN max thrust with an average of 3.51 kN, generating a
+                    total impulse of 22,166 Ns over a 7-second burn. Nominal propellant flow is 1.439 kg/s of nitrous
+                    and 0.340 kg/s of ethanol, giving an O/F ratio of 4.235 and a characteristic length of 0.55m, with a
+                    3.328" chamber diameter.
                     <br><br>
-                    At the heart of the engine is a 75-element, fuel-centered coaxial shear injector, machined as a
-                    single piece from 6061 aluminum and fitted with 304 stainless steel hypodermic needles bonded in
-                    place with JB Weld epoxy. Nitrous is distributed to the elements through an annular manifold between
-                    two o-rings, achieving mass flow variation of under 0.5% across the eight radial feed channels.
+                    At the heart of the engine is a 45-element Coaxial Shear Injector. Machined as a single piece from
+                    6061-T6, it features 304 stainless steel hypodermic needles bonded in place with DP420 Epoxy.
+                    Nitrous is distributed to the elements through an annular manifold that ejects concentrically around
+                    the ethanol stream. Upon collision, these streams atomize within our engine chamber and are ignited
+                    with an Estes motor.
                     <br><br>
-                    The combustion chamber uses a linen phenolic ablative liner (Garolite LE) paired with a
-                    custom-machined 75mm graphite nozzle from Loki Research, secured with RTV silicone and protected by
-                    a G10 insulation plate at the nozzle-carrier joint. Two custom pneumatic sleeve valves with PTFE
-                    poppets control propellant flow, actuated by ground-side CO2 and held closed via spring-loaded
-                    positive area differential; recent redesigns cut pressure drop across these valves from 2.0 MPa to
-                    1.2 MPa.
+                    The combustion chamber is a single machined block of Phenolic Ablative sandwiched between the
+                    Injector faceplate and a machined boattail container. A machined piece then radially constrains it
+                    and acts as an air insulator between the engine chamber and fincan. This design was enabled by DFA,
+                    allowing us to swap ablative engine chambers across launches and ensure affordable, quick turnaround
+                    with a single disposable component replaceable by removing 8 bolts.
                     <br><br>
-                    Propellant is stored in autogenously pressurized concentric tanks (operating ~5.0 MPa, burst-rated
-                    with a 2.33 safety factor), fed through radial manifold passages to the injector. Design work has
-                    focused heavily on reducing pressure drops (from 2.5 MPa to 0.9 MPa near nominal flow) and
-                    reconciling ethanol vs. nitrous poppet valve geometry differences. Upcoming cold flow testing (with
-                    Reynolds-matching) and a hot fire at FAR are planned to validate these thermofluidic models against
-                    real performance.
+                    Our final design iteration was to 3D print the fincan from 6061-T6. This was a bold move pushed by
+                    thermal simulations that showed our fincan, planned to be nylon-composite, climbing above working
+                    temperatures. We originally had this concentrically fixed around a thin-walled engine chamber, to
+                    have 6061-T6 fins epoxied into the nylon, but replaced all these components with one component. This
+                    is what advanced manufacturing is all about!
                 </p>
                 <div class="rocket-content">
 
