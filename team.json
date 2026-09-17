@@ -30,6 +30,24 @@
             "title": "VP Recovery",
             "origin": "Singapore",
             "desc": "I am a 3rd mechanical engineering student, currently back home in Singapore on co-op as a Propulsion Research Intern for the Satellite Technology and Research (STAR) Centre. I really love design and hands-on problem solving, and in my free time, I take photos and play tennis."
+        },
+        {
+            "name": "Ajay Sharma",
+            "image": "images/profiles/ajay_sharma.jpg",
+            "title": "VP Propulsions",
+            "origin": "Punjab",
+            "desc": ""
+        },
+        {
+            "name": "Lily Renaud",
+            "image": "images/profiles/lily_renaud.jpg",
+            "title": "VP Propulsions",
+            "origin": "Michif / Red River Métis",
+            "desc": "4th year Materials Engineering student with experience in
+            CAD, FEM, materials characterization, and testing. Interested in
+            materials performance, design, and aerospace applications, with
+            hands-on experience applying materials knowledge through research
+            and engineering design projects. I enjoy tap dancing and hiking."
         }
     ],
     "Electrical": [
@@ -37,8 +55,15 @@
             "name": "Derin Aladogan",
             "image": "images/profiles/derin_aladogan.jpg",
             "title": "VP",
-            "origin": "BLANK",
+            "origin": "Türkiye",
             "desc": "I completed my undergraduate in Chemical and Biological Engineering in 2026, and I am currently pursuing a masters in Mechanical Engineering. I'm passionate about 3D modelling, especially when it comes to artistic design."
+        },
+        {
+            "name": "Matei Dragomir",
+            "image": "images/profiles/derin_aladogan.jpg",
+            "title": "VP Embedded",
+            "origin": "Romania",
+            "desc": "I am in my final year of electrical engineering focusing on embedded systems, machine learning and computer architecture. My Hobbies include 3d printing, and tinkering with computer hardware and microcontrollers."
         }
     ]
 }
