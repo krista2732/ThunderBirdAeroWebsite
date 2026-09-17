@@ -247,6 +247,51 @@
     gap: 20px;
   }
 
+  .rocket-content-grid#stoodis-airframe {
+    grid-template-columns: 1.0fr;
+    grid-template-areas:
+      "video"
+      "render"
+      "para"
+      "summary";
+  }
+
+  .rocket-content-grid#stoodis-avionics {
+    grid-template-columns: 1.0fr;
+    grid-template-areas:
+      "video"
+      "render"
+      "para"
+      "summary";
+  }
+
+  .rocket-content-grid#skoden-airframe {
+    grid-template-columns: 1.0fr;
+    grid-template-areas:
+      "video"
+      "render"
+      "para"
+      "summary";
+  }
+
+  .rocket-content-grid#skoden-avionics {
+    grid-template-columns: 1.0fr;
+    grid-template-areas:
+      "video"
+      "render"
+      "para"
+      "summary";
+  }
+
+  .rocket-content-grid#skoden-propulsion {
+    grid-template-columns: 1.0fr;
+    grid-template-areas:
+      "video"
+      "render"
+      "para"
+      "summary";
+  }
+
   .rocket-page {
     padding: 80px 0px;
     max-width: 80%;

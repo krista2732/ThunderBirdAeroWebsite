@@ -54,16 +54,9 @@
         {
             "name": "Derin Aladogan",
             "image": "images/profiles/derin_aladogan.jpg",
-            "title": "VP",
+            "title": "VP Embedded",
             "origin": "Türkiye",
             "desc": "I completed my undergraduate in Chemical and Biological Engineering in 2026, and I am currently pursuing a masters in Mechanical Engineering. I'm passionate about 3D modelling, especially when it comes to artistic design."
-        },
-        {
-            "name": "Matei Dragomir",
-            "image": "images/profiles/derin_aladogan.jpg",
-            "title": "VP Embedded",
-            "origin": "Romania",
-            "desc": "I am in my final year of electrical engineering focusing on embedded systems, machine learning and computer architecture. My Hobbies include 3d printing, and tinkering with computer hardware and microcontrollers."
         }
     ]
 }
