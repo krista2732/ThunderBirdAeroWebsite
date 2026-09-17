@@ -146,7 +146,7 @@
    TABLET
    ================================ */
 
-@media (max-width: 900px) {
+@media (max-width: 1500px) {
 
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -158,7 +158,7 @@
    MOBILE
    ================================ */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
     .team-page {
         padding: 60px 20px;
