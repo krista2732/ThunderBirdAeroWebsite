@@ -68,9 +68,8 @@
 
 .rocket-section-para {
   color: var(--muted-text-colour);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.6;
-  margin: 0;
   grid-area: para;
 }
 
@@ -82,49 +81,88 @@
   display: grid;
   grid-template-columns: 1.0fr 1.5fr;
   grid-template-areas:
-    "para content";
+    "para video"
+    "para summary"
+    "para render";
   gap: 32px;
   align-items: center;
 }
 
-.rocket-content {
-  grid-area: content;
-  width: 100%;
+.rocket-content-grid#stoodis-airframe {
+  grid-template-columns: 1.0fr 1.0fr;
+  grid-template-areas:
+    "para video"
+    "para summary"
+    "render render";
+}
+
+.rocket-content-grid#stoodis-avionics {
+  grid-template-columns: 1.0fr 1.0fr;
+  grid-template-areas:
+    "para video"
+    "para summary"
+    "render render";
+}
+
+.rocket-content-grid#skoden-airframe {
+  grid-template-columns: 1.0fr 1.0fr;
+  grid-template-areas:
+    "para video"
+    "para summary"
+    "render render";
+}
+
+.rocket-content-grid#skoden-avionics {
+  grid-template-columns: 1.0fr 1.0fr;
+  grid-template-areas:
+    "para video"
+    "para summary"
+    "para render";
+}
+
+.rocket-content-grid#skoden-propulsion {
+  grid-template-columns: 1.0fr 1.0fr;
+  grid-template-areas:
+    "para para"
+    "render summary";
 }
 
 /* --- video --- */
 .rocket-video {
   background: #000;
+  grid-area: video;
   border-radius: var(--primary-border-radius);
   overflow: hidden;
   position: relative;
-  margin: 16px;
+  margin: 4px;
 }
 
 .rocket-video video {
-  width: 110%;
+  width: 100%;
   height: auto;
   display: block;
 }
 
 /* --- summary card (the "summary table") --- */
 .rocket-summary {
+  grid-area: summary;
   background-color: var(--primary-element-colour);
   border-radius: var(--primary-border-radius);
   padding: 24px;
   transition: background-color 0.2s ease, transform 0.2s ease;
-  margin: 16px;
+  margin: 4px;
 }
 
 /* --- render --- */
 .rocket-render {
+  grid-area: render;
   background-color: var(--primary-element-colour);
   border-radius: var(--primary-border-radius);
   padding: 24px;
   aspect-ratio: 1.294;
   overflow: hidden;
   position: relative;
-  margin: 16px;
+  margin: 4px;
 }
 
 .rocket-render iframe {
@@ -202,8 +240,10 @@
   .rocket-content-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "content"
-      "para";
+      "video"
+      "render"
+      "para"
+      "summary";
     gap: 20px;
   }
 

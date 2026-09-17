@@ -77,7 +77,7 @@
                 <div class="rocket-section-line"></div>
             </div>
 
-            <div class="rocket-content-grid">
+            <div class="rocket-content-grid" id="skoden-airframe">
                 <p class="rocket-section-para">
                     Skoden is a liquid rocket that has been designed with a simple philosophy: keep it small, simple,
                     and easy to integrate. Liquid rockets are complex enough; why reinvent the wheel? These goals in
@@ -104,41 +104,36 @@
                     outsourced overseas.
 
                 </p>
-                <div class="rocket-content">
-                    <div class="rocket-video">
-                        <video autoplay muted loop playsinline>
-                            <source src="videos/skoden_explode_airframe.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                <div class="rocket-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/skoden_explode_airframe.mp4" type="video/mp4">
+                    </video>
+                </div>
 
-                    <div class="rocket-summary">
-                        <h3>Key specs</h3>
-                        <div class="summary-row"><span class="k">Length</span><span class="v">105"</span></div>
-                        <div class="summary-row"><span class="k">Diameter</span><span class="v">5"</span></div>
-                        <div class="summary-row"><span class="k">Liftoff mass</span><span class="v">28 kg</span></div>
-                        <div class="summary-row"><span class="k">Target apogee</span><span class="v">10,000 m</span>
-                        </div>
-                        <div class="summary-row"><span class="k">Top Speed</span><span class="v">Mach 2.5</span></div>
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Length</span><span class="v">105"</span></div>
+                    <div class="summary-row"><span class="k">Diameter</span><span class="v">5"</span></div>
+                    <div class="summary-row"><span class="k">Liftoff mass</span><span class="v">28 kg</span></div>
+                    <div class="summary-row"><span class="k">Target apogee</span><span class="v">10,000 m</span>
                     </div>
-                    <div class="rocket-render">
-                        <iframe src="renders/skoden_airframe/Data/embed.html" title="Skoden Airframe Render"
-                            loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                        <button class="fullscreen-btn"
-                            onclick="window.open('./renders/skoden_airframe/Data/index.html', '_blank')"
-                            title="Open fullscreen">
-                            <!-- simple fullscreen icon -->
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3" />
-                            </svg>
-                        </button>
-                    </div>
+                    <div class="summary-row"><span class="k">Top Speed</span><span class="v">Mach 2.5</span></div>
+                </div>
+                <div class="rocket-render">
+                    <iframe src="renders/skoden_airframe/Data/embed.html" title="Skoden Airframe Render" loading="lazy"
+                        allow="fullscreen" allowfullscreen></iframe>
+                    <button class="fullscreen-btn"
+                        onclick="window.open('./renders/skoden_airframe/Data/index.html', '_blank')"
+                        title="Open fullscreen">
+                        <!-- simple fullscreen icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
-
-
         </div>
 
         <!-- AVIONICS -->
@@ -148,7 +143,7 @@
                 <div class="rocket-section-line"></div>
             </div>
 
-            <div class="rocket-content-grid">
+            <div class="rocket-content-grid" id="skoden-avionics">
                 <p class="rocket-section-para">
                     The Skoden rocket’s avionics and communication architecture is designed to ensure robust telemetry,
                     command, and control throughout the mission, leveraging a combination of long-range wireless
@@ -176,44 +171,42 @@
                     launch.
                 </p>
 
-                <div class="rocket-content">
-                    <div class="rocket-video">
-                        <video autoplay muted loop playsinline>
-                            <source src="videos/skoden_explode_avionics.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                <div class="rocket-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/skoden_explode_avionics.mp4" type="video/mp4">
+                    </video>
+                </div>
 
-                    <div class="rocket-summary">
-                        <h3>Key specs</h3>
-                        <div class="summary-row"><span class="k">Flight computers</span><span class="v">2x Blue Raven,
-                                redundant (DMR)</span></div>
-                        <div class="summary-row"><span class="k">GPS tracking</span><span class="v">OTS 900MHz +
-                                MissileWorks RTx, redundant</span></div>
-                        <div class="summary-row"><span class="k">Pyro channels</span><span class="v">4x Eagle CO2
-                                ejection
-                                canisters</span></div>
-                        <div class="summary-row"><span class="k">Data acquisition</span><span class="v">3x datasets, 2
-                                DAQ
-                                systems (12-state + quaternion)</span></div>
-                    </div>
-                    <div class="rocket-render">
-                        <iframe src="renders/skoden_avionics/Data/embed.html" title="Skoden Avionics Render"
-                            loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                        <button class="fullscreen-btn"
-                            onclick="window.open('./renders/skoden_avionics/Data/index.html', '_blank')"
-                            title="Open fullscreen">
-                            <!-- simple fullscreen icon -->
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3" />
-                            </svg>
-                        </button>
-                    </div>
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Flight computers</span><span class="v">2x Blue Raven,
+                            redundant (DMR)</span></div>
+                    <div class="summary-row"><span class="k">GPS tracking</span><span class="v">OTS 900MHz +
+                            MissileWorks RTx, redundant</span></div>
+                    <div class="summary-row"><span class="k">Pyro channels</span><span class="v">4x Eagle CO2
+                            ejection
+                            canisters</span></div>
+                    <div class="summary-row"><span class="k">Data acquisition</span><span class="v">3x datasets, 2
+                            DAQ
+                            systems (12-state + quaternion)</span></div>
+                </div>
+                <div class="rocket-render">
+                    <iframe src="renders/skoden_avionics/Data/embed.html" title="Skoden Avionics Render" loading="lazy"
+                        allow="fullscreen" allowfullscreen></iframe>
+                    <button class="fullscreen-btn"
+                        onclick="window.open('./renders/skoden_avionics/Data/index.html', '_blank')"
+                        title="Open fullscreen">
+                        <!-- simple fullscreen icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-
         </div>
+
 
         <!-- ENGINE -->
         <div class="rocket-section" id="engine">
@@ -222,7 +215,7 @@
                 <div class="rocket-section-line"></div>
             </div>
 
-            <div class="rocket-content-grid">
+            <div class="rocket-content-grid" id="skoden-propulsion">
                 <p class="rocket-section-para">
                     Skoden's propulsion system is a liquid bipropellant engine using NOS and ETH, designed within a 5"
                     geometric envelope. The engine targets 3.96 kN max thrust with an average of 3.51 kN, generating a
@@ -248,33 +241,31 @@
                     have 6061-T6 fins epoxied into the nylon, but replaced all these components with one component. This
                     is what advanced manufacturing is all about!
                 </p>
-                <div class="rocket-content">
-
-                    <div class="rocket-summary">
-                        <h3>Key specs</h3>
-                        <div class="summary-row"><span class="k">Max Thrust</span><span class="v">3.96 kN</span></div>
-                        <div class="summary-row"><span class="k">Avg. Thrust</span><span class="v">3.51 kN</span></div>
-                        <div class="summary-row"><span class="k">Total Impulse</span><span class="v">22166 Ns</span>
-                        </div>
-                        <div class="summary-row"><span class="k">Camber Diameter</span><span class="v">3.328 in</span>
-                        </div>
+                <div class="rocket-summary">
+                    <h3>Key specs</h3>
+                    <div class="summary-row"><span class="k">Max Thrust</span><span class="v">3.96 kN</span></div>
+                    <div class="summary-row"><span class="k">Avg. Thrust</span><span class="v">3.51 kN</span></div>
+                    <div class="summary-row"><span class="k">Total Impulse</span><span class="v">22166 Ns</span>
                     </div>
-                    <div class="rocket-render">
-                        <iframe src="renders/skoden_engine/Data/embed.html" title="Skoden Engine Render" loading="lazy"
-                            allow="fullscreen" allowfullscreen></iframe>
-                        <button class="fullscreen-btn"
-                            onclick="window.open('./renders/skoden_engine/Data/index.html', '_blank')"
-                            title="Open fullscreen">
-                            <!-- simple fullscreen icon -->
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3" />
-                            </svg>
-                        </button>
+                    <div class="summary-row"><span class="k">Camber Diameter</span><span class="v">3.328 in</span>
                     </div>
                 </div>
+                <div class="rocket-render">
+                    <iframe src="renders/skoden_engine/Data/embed.html" title="Skoden Engine Render" loading="lazy"
+                        allow="fullscreen" allowfullscreen></iframe>
+                    <button class="fullscreen-btn"
+                        onclick="window.open('./renders/skoden_engine/Data/index.html', '_blank')"
+                        title="Open fullscreen">
+                        <!-- simple fullscreen icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3" />
+                        </svg>
+                    </button>
+                </div>
             </div>
+        </div>
         </div>
 
         </div>

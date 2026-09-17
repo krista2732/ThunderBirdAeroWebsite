@@ -5,10 +5,7 @@
             "image": "images/profiles/raven_caron.jpg",
             "title": "Captain & President",
             "origin": "Sagamok Nation",
-            "desc": "I am 5th year Integrated Engineering student who loves hifi
-            audio, literature, and specialty coffee. Although I work in
-            robotics, I miss being behind an espresso machine in cafes... I also
-            like SolidWorks and Rockets"
+            "desc": "I am 5th year Integrated Engineering student who loves hifi audio, literature, and specialty coffee. Although I work in robotics, I miss being behind an espresso machine in cafes... I also like SolidWorks and Rockets"
         },
         {
             "name": "Chris Elwell",
@@ -33,21 +30,24 @@
         },
         {
             "name": "Ajay Sharma",
-            "image": "images/profiles/ajay_sharma.jpg",
+            "image": "images/profiles/ajay_sharma.png",
             "title": "VP Propulsions",
             "origin": "Punjab",
-            "desc": ""
+            "desc": "I am a 4th year Mechanical Engineering student specializing in Aerospace, driven by hands-on design and problem-solving. My experience spans high-powered rocketry, autonomous underwater vehicles, drones, and propulsion, with an increasing focus on liquid rocket engine design and development. I enjoy turning ambitious ideas into tested hardware through CAD, fabrication, and analysis. Outside engineering, I enjoy travelling, learning languages, and playing chess."
         },
         {
-            "name": "Lily Renaud",
-            "image": "images/profiles/lily_renaud.jpg",
+            "name": "Lily Renaud", 
+            "image": "images/profiles/lily_renaud.png",
             "title": "VP Propulsions",
             "origin": "Michif / Red River Métis",
-            "desc": "4th year Materials Engineering student with experience in
-            CAD, FEM, materials characterization, and testing. Interested in
-            materials performance, design, and aerospace applications, with
-            hands-on experience applying materials knowledge through research
-            and engineering design projects. I enjoy tap dancing and hiking."
+            "desc": "4th year Materials Engineering student with experience in CAD, FEM, materials characterization, and testing. Interested in materials performance, design, and aerospace applications, with hands-on experience applying materials knowledge through research and engineering design projects. I enjoy tap dancing and hiking." 
+        },
+        {
+            "name": "Krista Pietrobono",
+            "image": "images/profiles/krista_pietrobono.jpg",
+            "title": "Mechanical Team Member",
+            "origin": "Siksika Nation",
+            "desc": "I am a geological engineering student with a passion for creation, from web development to digital art! I enjoy rocketry as it is a great way to create from a more technical perspective in a team environment."
         }
     ],
     "Electrical": [
