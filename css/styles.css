@@ -199,14 +199,14 @@ html::-webkit-scrollbar {
     line-height: 1.5;
 }
 
-.image-section {
-    width: 100%;
+.image-section#goal {
+    aspect-ratio: 2.0/1.0;
 }
 
 .image-wrap {
     position: relative;
     width: 100%;
-    height: 800px;
+    aspect-ratio: 2;
     overflow: hidden;
     line-height: 0;
 }
