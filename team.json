@@ -48,6 +48,20 @@
             "title": "Mechanical Team Member",
             "origin": "Siksika Nation",
             "desc": "I am a geological engineering student with a passion for creation, from web development to digital art! I enjoy rocketry as it is a great way to create from a more technical perspective in a team environment."
+        },
+        {
+            "name": "Shohaib Abdurahman",
+            "image": "images/profiles/shohaib_abdurahman.jpg",
+            "title": "Mechanical Team Member",
+            "origin": "Dubai, United Arab Emirates",
+            "desc": "I am a 4th year Mechanical Engineering student specializing in Aerospace at UBC. I’m passionate about mechanical design and hands-on problem solving, and my past co-op experiences in asset management and reliability engineering have given me experience with CAD, engineering analysis, and working on real-world systems. I’m currently working with RocketPy and learning Python, and I’m excited to apply what I learn to aerospace design and build things with the team!"
+        },
+        {
+            "name": "Abhinav Seth",
+            "image": "images/profiles/abhinav_seth.png",
+            "title": "Mechanical Team Member",
+            "origin": "Phnom Penh, Cambodia",
+            "desc": "I am a 1st year engineering student at UBC hoping to go into aerospace engineering. I joined Thunderbird Aerospace to get hands-on experience and learn how real rockets go from an idea to the launch pad. Right now I’m building up my CAD skills in Fusion360 and looking forward to helping design parts for our rockets while learning as much as I can from the team."
         }
     ],
     "Electrical": [
