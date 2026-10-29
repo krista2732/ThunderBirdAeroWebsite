@@ -199,16 +199,18 @@ html::-webkit-scrollbar {
     line-height: 1.5;
 }
 
-.image-section#goal {
-    aspect-ratio: 2.0/1.0;
-}
-
 .image-wrap {
     position: relative;
     width: 100%;
     aspect-ratio: 2;
+    /* desktop: keep the 2:1 look */
+    min-height: 320px;
+    /* safety floor */
     overflow: hidden;
     line-height: 0;
+    display: flex;
+    align-items: flex-end;
+    /* text sits at the bottom */
 }
 
 .image-wrap::after {
@@ -216,7 +218,6 @@ html::-webkit-scrollbar {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    /* darken whole image a bit, a bit more at the bottom */
     background: linear-gradient(to top,
             rgba(0, 0, 0, 0.9) 0%,
             rgba(0, 0, 0, 0.8) 20%,
@@ -224,27 +225,30 @@ html::-webkit-scrollbar {
             rgba(0, 0, 0, 0.25) 100%);
 }
 
+/* image becomes a background layer */
 .image-section-image {
-    display: block;
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* overlay is now in normal flow, so it can push the height */
 .image-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     z-index: 5;
+    width: 100%;
     padding: 3rem 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.5;
+    /* .image-wrap sets line-height: 0, so restore it */
 }
 
 .image-overlay p {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     max-width: 800px;
     margin: 0;
@@ -253,11 +257,85 @@ html::-webkit-scrollbar {
 }
 
 .image-overlay h3 {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     max-width: 800px;
     margin: 0 0 0.5rem;
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 1.25;
+}
+
+/* desktop-only ratio: wrap your per-section rules like this */
+@media (min-width: 769px) {
+    .image-section#goal {
+        aspect-ratio: 2 / 1;
+    }
+
+    /* ...same for your other sections */
+}
+
+@media (max-width: 768px) {
+    .image-wrap {
+        display: block;
+        aspect-ratio: auto;
+        min-height: 0;
+        overflow: visible;
+        background: var(--primary-background);
+        line-height: 1.5;
+    }
+
+    .image-wrap::after {
+        display: none;
+    }
+
+    .image-section-image {
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        object-position: center 30%;
+        /* fade completes at the image's bottom edge */
+        -webkit-mask-image: linear-gradient(to bottom, var(--primary-background) 70%, transparent 100%);
+        mask-image: linear-gradient(to bottom, var(--primary-background) 70%, transparent 100%);
+    }
+
+    .image-overlay {
+        position: relative;
+        display: block;
+        /* not flex, so children use full width */
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        /* no negative margin */
+        padding: 1.5rem 1.25rem 2.5rem;
+    }
+
+    /* accent bar lives on the overlay, so it works with or without an h3 */
+    .image-overlay::before {
+        content: '';
+        display: block;
+        width: 2.5rem;
+        height: 3px;
+        margin-bottom: 1rem;
+        background: white;
+    }
+
+    .image-overlay h3 {
+        max-width: none;
+        margin: 0 0 0.75rem;
+        text-align: left;
+        font-size: clamp(1.5rem, 6vw, 1.9rem);
+    }
+
+    .image-overlay p {
+        max-width: 60ch;
+        margin: 0;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.85);
+    }
 }
